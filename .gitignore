@@ -8,7 +8,6 @@ cache
 **/CMakeCache.txt
 **/CMakeFiles
 **/cmake_install.cmake
-**/Makefile
 # Auto-cloned dependencies
 _deps
 pico-sdk
