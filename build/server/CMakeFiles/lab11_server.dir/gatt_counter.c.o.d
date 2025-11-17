@@ -119,4 +119,5 @@ server/CMakeFiles/lab11_server.dir/gatt_counter.c.o: \
  /Users/emily/modules/pico-sdk/lib/btstack/src/le-audio/gatt-service/broadcast_audio_scan_service_server.h \
  /Users/emily/modules/pico-sdk/lib/btstack/src/le-audio/gatt-service/broadcast_audio_scan_service_util.h \
  /Users/emily/modules/pico-sdk/lib/btstack/src/le-audio/gatt-service/broadcast_audio_scan_service_util.h \
- /Users/emily/modules/pico-sdk/lib/btstack/src/ble/gatt-service/battery_service_server.h
+ /Users/emily/modules/pico-sdk/lib/btstack/src/ble/gatt-service/battery_service_server.h \
+ /Users/emily/Documents/MastersProgram/ECE6785/Lab11/include/temp_sense.h

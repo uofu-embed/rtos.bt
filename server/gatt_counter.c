@@ -55,6 +55,7 @@
 #include "gatt_counter.h"
 #include "btstack.h"
 #include "ble/gatt-service/battery_service_server.h"
+#include "temp_sense.h"
 
 #define HEARTBEAT_PERIOD_MS 1000
 
@@ -259,7 +260,7 @@ int btstack_main(void);
 int btstack_main(void)
 {
     le_counter_setup();
-
+    temperature_setup();
     // turn on!
 	hci_power_control(HCI_POWER_ON);
 

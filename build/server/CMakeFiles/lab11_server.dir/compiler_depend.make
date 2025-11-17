@@ -15894,6 +15894,7 @@ server/CMakeFiles/lab11_server.dir/gatt_counter.c.o: /Users/emily/Documents/Mast
   /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h \
   server/generated/lab11_server_gatt_header/gatt_counter.h \
   /Users/emily/Documents/MastersProgram/ECE6785/Lab11/include/btstack_config.h \
+  /Users/emily/Documents/MastersProgram/ECE6785/Lab11/include/temp_sense.h \
   /Users/emily/modules/pico-sdk/lib/btstack/src/ad_parser.h \
   /Users/emily/modules/pico-sdk/lib/btstack/src/ble/att_db.h \
   /Users/emily/modules/pico-sdk/lib/btstack/src/ble/att_db_util.h \
@@ -16872,6 +16873,8 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/machine/endian.h:
 
 /Users/emily/modules/pico-sdk/lib/lwip/src/core/mem.c:
+
+/Users/emily/Documents/MastersProgram/ECE6785/Lab11/include/temp_sense.h:
 
 /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/arm-none-eabi/include/machine/_endian.h:
 

@@ -504,6 +504,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/lab11_server.dir/gatt_counter.c.o.d"
   "CMakeFiles/lab11_server.dir/picow_bt_example_freertos.c.o"
   "CMakeFiles/lab11_server.dir/picow_bt_example_freertos.c.o.d"
+  "CMakeFiles/lab11_server.dir/temp_sense.c.o"
+  "CMakeFiles/lab11_server.dir/temp_sense.c.o.d"
   "lab11_server.bin"
   "lab11_server.dis"
   "lab11_server.elf"

@@ -446,6 +446,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/emily/modules/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c" "server/CMakeFiles/lab11_server.dir/Users/emily/modules/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o" "gcc" "server/CMakeFiles/lab11_server.dir/Users/emily/modules/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o.d"
   "/Users/emily/Documents/MastersProgram/ECE6785/Lab11/server/gatt_counter.c" "server/CMakeFiles/lab11_server.dir/gatt_counter.c.o" "gcc" "server/CMakeFiles/lab11_server.dir/gatt_counter.c.o.d"
   "/Users/emily/Documents/MastersProgram/ECE6785/Lab11/server/picow_bt_example_freertos.c" "server/CMakeFiles/lab11_server.dir/picow_bt_example_freertos.c.o" "gcc" "server/CMakeFiles/lab11_server.dir/picow_bt_example_freertos.c.o.d"
+  "/Users/emily/Documents/MastersProgram/ECE6785/Lab11/server/temp_sense.c" "server/CMakeFiles/lab11_server.dir/temp_sense.c.o" "gcc" "server/CMakeFiles/lab11_server.dir/temp_sense.c.o.d"
   "/Users/emily/modules/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp" "server/CMakeFiles/lab11_server.dir/Users/emily/modules/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o" "gcc" "server/CMakeFiles/lab11_server.dir/Users/emily/modules/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d"
   )
 
