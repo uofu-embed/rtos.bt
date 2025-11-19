@@ -222,7 +222,14 @@ static uint16_t att_read_callback(hci_con_handle_t connection_handle, uint16_t a
     if (att_handle == ATT_CHARACTERISTIC_0000FF11_0000_1000_8000_00805F9B34FB_01_VALUE_HANDLE){
         return att_read_callback_handle_blob((const uint8_t *)counter_string, counter_string_len, offset, buffer, buffer_size);
     }
-    return 0;
+    else if (att_handle == ATT_CHARACTERISTIC_ORG_BLUETOOTH_CHARACTERISTIC_TEMPERATURE_CELSIUS_01_VALUE_HANDLE) {
+        uint16_t data = (uint16_t) (temperature_poll()*100);
+        //uint16_t data = 42;
+        return att_read_callback_handle_little_endian_16(data,offset,buffer,buffer_size);
+    }
+    else {
+        return 0;
+    }
 }
 /* LISTING_END */
 
