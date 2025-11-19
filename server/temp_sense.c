@@ -1,5 +1,5 @@
 #include <hardware/adc.h>
-#include "temp_sense.h"
+#include <temp_sense.h>
 
 #define ADC_CHANNEL_TEMPSENSOR 4
 
