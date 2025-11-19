@@ -55,6 +55,7 @@
 #include "gatt_counter.h"
 #include "btstack.h"
 #include "ble/gatt-service/battery_service_server.h"
+#include "temp_sense.h"
 
 #define HEARTBEAT_PERIOD_MS 1000
 
@@ -89,7 +90,7 @@ const uint8_t adv_data[] = {
     // Flags general discoverable
     0x02, BLUETOOTH_DATA_TYPE_FLAGS, APP_AD_FLAGS,
     // Name
-    11, BLUETOOTH_DATA_TYPE_COMPLETE_LOCAL_NAME, 'A', 's', 'h', 't', 'o', 'n', ' ', 'B', 'L', 'E',
+    11, BLUETOOTH_DATA_TYPE_COMPLETE_LOCAL_NAME, 'G', 'Y', 'A', 'T', 'T', ' ', 'D', 'A', 'M', 'N',
     // Incomplete List of 16-bit Service Class UUIDs -- FF10 - only valid for testing!
     0x03, BLUETOOTH_DATA_TYPE_INCOMPLETE_LIST_OF_16_BIT_SERVICE_CLASS_UUIDS, 0x10, 0xff,
 };
@@ -221,7 +222,14 @@ static uint16_t att_read_callback(hci_con_handle_t connection_handle, uint16_t a
     if (att_handle == ATT_CHARACTERISTIC_0000FF11_0000_1000_8000_00805F9B34FB_01_VALUE_HANDLE){
         return att_read_callback_handle_blob((const uint8_t *)counter_string, counter_string_len, offset, buffer, buffer_size);
     }
-    return 0;
+    else if (att_handle == ATT_CHARACTERISTIC_ORG_BLUETOOTH_CHARACTERISTIC_TEMPERATURE_CELSIUS_01_VALUE_HANDLE) {
+        uint16_t data = (uint16_t) (temperature_poll()*100);
+        //uint16_t data = 42;
+        return att_read_callback_handle_little_endian_16(data,offset,buffer,buffer_size);
+    }
+    else {
+        return 0;
+    }
 }
 /* LISTING_END */
 
@@ -259,7 +267,7 @@ int btstack_main(void);
 int btstack_main(void)
 {
     le_counter_setup();
-
+    temperature_setup();
     // turn on!
 	hci_power_control(HCI_POWER_ON);
 
